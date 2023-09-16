@@ -1,0 +1,23 @@
+To run the tests:
+
+There are currently 8 different test cases available in ~cs537-1/tests/P7/test_disk_images.
+Each of these folders has an input and output file.
+
+*0 example image (image-01 will not be used for the final testing)
+1 empty ext2 img
+2 not an ext2 img
+3 multiple directories
+4 non-jpg distracter files; corrupted files with jpg extension but wrong magic number
+5 group size different from default and multiple groups
+6 deleted files and jpgs outside top_secret
+7 deleted directories
+
+Run the following command 
+cp -r ~cs537-1/tests/P7/* . 
+to copy all the tests to your working directory
+
+Then run your runscan with the provided disk images, and run rcheck to find the number of mismatches. The rcheck executable is also present in the ~cs537-1/tests/P7 folder, so once it is copied over, you can use this command to run it:
+python3 rcheck.py <your output dir> <test output dir>
+
+Make sure your program fails gracefully in all cases.
+*00.img is the original imgae-01 file.

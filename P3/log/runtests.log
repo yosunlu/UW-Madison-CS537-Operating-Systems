@@ -1,0 +1,226 @@
+starting build
+
+**********************************************************************
+
+Test build
+compile smash.c
+
+**********************************************************************
+gcc smash.c -o smash
+
+
+test build PASSED (5 of 5)
+ (compile smash.c)
+
+starting badcd
+
+**********************************************************************
+
+Test badcd
+cd to a bad directory
+
+**********************************************************************
+/tmp/tmp2yhbdy0i/p/./smash
+
+
+test badcd PASSED (5 of 5)
+ (cd to a bad directory)
+
+starting exec
+
+**********************************************************************
+
+Test exec
+path should be /bin
+
+**********************************************************************
+/tmp/tmp2yhbdy0i/p/./smash
+
+
+test exec PASSED (5 of 5)
+ (path should be /bin)
+
+starting badexec
+
+**********************************************************************
+
+Test badexec
+run programs that do not exist in /bin
+
+**********************************************************************
+/tmp/tmp2yhbdy0i/p/./smash
+
+
+test badexec PASSED (5 of 5)
+ (run programs that do not exist in /bin)
+
+starting pwd
+
+**********************************************************************
+
+Test pwd
+pwd test
+
+**********************************************************************
+/tmp/tmp2yhbdy0i/p/./smash
+
+
+test pwd PASSED (5 of 5)
+ (pwd test)
+
+starting whitespace
+
+**********************************************************************
+
+Test whitespace
+leading and trailing whitespace, full whitespaces or empty string
+
+**********************************************************************
+/tmp/tmp2yhbdy0i/p/./smash
+
+
+test whitespace PASSED (5 of 5)
+ (leading and trailing whitespace, full whitespaces or empty string)
+
+starting rdr
+
+**********************************************************************
+
+Test rdr
+simple redirection with no standard error
+
+**********************************************************************
+/tmp/tmp2yhbdy0i/p/./smash
+
+
+test rdr PASSED (10 of 10)
+ (simple redirection with no standard error)
+
+starting pipe
+
+**********************************************************************
+
+Test pipe
+simple pipe
+
+**********************************************************************
+/tmp/tmp2yhbdy0i/p/./smash
+
+
+test pipe PASSED (15 of 15)
+ (simple pipe)
+
+starting mul
+
+**********************************************************************
+
+Test mul
+running multiple commands at once
+
+**********************************************************************
+/tmp/tmp2yhbdy0i/p/./smash
+
+
+test mul PASSED (5 of 5)
+ (running multiple commands at once)
+
+starting loop
+
+**********************************************************************
+
+Test loop
+simple loop
+
+**********************************************************************
+/tmp/tmp2yhbdy0i/p/./smash
+
+
+test loop PASSED (15 of 15)
+ (simple loop)
+
+starting looprd
+
+**********************************************************************
+
+Test looprd
+simple redirection with loop
+
+**********************************************************************
+/tmp/tmp2yhbdy0i/p/./smash
+
+
+test looprd PASSED (15 of 15)
+ (simple redirection with loop)
+
+starting piperd
+
+**********************************************************************
+
+Test piperd
+redirection with pipe
+
+**********************************************************************
+/tmp/tmp2yhbdy0i/p/./smash
+
+
+test piperd PASSED (15 of 15)
+ (redirection with pipe)
+
+starting pipechain
+
+**********************************************************************
+
+Test pipechain
+chain pipe
+
+**********************************************************************
+/tmp/tmp2yhbdy0i/p/./smash
+
+
+test pipechain PASSED (15 of 15)
+ (chain pipe)
+
+**********************************************************************
+Summary:
+test build PASSED (5 of 5)
+ (compile smash.c)
+
+test badcd PASSED (5 of 5)
+ (cd to a bad directory)
+
+test exec PASSED (5 of 5)
+ (path should be /bin)
+
+test badexec PASSED (5 of 5)
+ (run programs that do not exist in /bin)
+
+test pwd PASSED (5 of 5)
+ (pwd test)
+
+test whitespace PASSED (5 of 5)
+ (leading and trailing whitespace, full whitespaces or empty string)
+
+test rdr PASSED (10 of 10)
+ (simple redirection with no standard error)
+
+test pipe PASSED (15 of 15)
+ (simple pipe)
+
+test mul PASSED (5 of 5)
+ (running multiple commands at once)
+
+test loop PASSED (15 of 15)
+ (simple loop)
+
+test looprd PASSED (15 of 15)
+ (simple redirection with loop)
+
+test piperd PASSED (15 of 15)
+ (redirection with pipe)
+
+test pipechain PASSED (15 of 15)
+ (chain pipe)
+
+Passed 13 of 13 tests.
+Overall 13 of 13
+Points 120 of 120

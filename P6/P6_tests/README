@@ -1,0 +1,14 @@
+To run the tests:
+
+There are currently 6 different test cases available in ~cs537-1/tests/P6.
+Each of these folders has an input and output file.
+
+Run the following command 
+cp -r ~cs537-1/tests/P6/* . 
+to copy all the tests to your working directory
+
+Then run your psort with the provided input file, and run rcheck to find the number of mismatches. The rcheck binary is also present in the ~cs537-1/tests/P6 folder, so once it is copied over, you can use this command to run it:
+rcheck <your output file> <test output file>
+
+For performance, we will just be checking that a speedup is observed as more threads are added.
+ 
